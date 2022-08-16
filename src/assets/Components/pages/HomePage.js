@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GiCookie, GiDonut, GiIcePop } from "react-icons/gi";
+import { GiCookie, GiDonut, GiIcePop, GiCoffeeMug } from "react-icons/gi";
 import ExtraItem2Dots from "../../Components/Extraitem2dots";
 import AnimatedPill from "../styled/AnimatedPill.styled";
 import Slider from "../styled/Slider.styled";
@@ -43,6 +43,17 @@ const pillItems = [
       <AnimatedPill key={4} icon={<GiIcePop />} title="IcePop" subTitle="+20" />
     ),
   },
+  {
+    id: 5,
+    content: (
+      <AnimatedPill
+        key={5}
+        icon={<GiCoffeeMug />}
+        title="IcePop"
+        subTitle="+20"
+      />
+    ),
+  },
 ];
 
 const donuts = [
@@ -79,6 +90,18 @@ const donuts = [
         image={donutImage}
         title="Oneil Donut"
         price={6.99}
+      />
+    ),
+  },
+  {
+    id: 4,
+    content: (
+      <MostSaleItem
+        id={4}
+        key={4}
+        image={donutImage2}
+        title="Sweet Donut"
+        price={13.99}
       />
     ),
   },
