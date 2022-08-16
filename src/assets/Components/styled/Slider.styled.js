@@ -22,12 +22,18 @@ const Title = styled.span`
 
 const List = styled.span`
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   padding: 0 2rem 1rem 2rem;
   width: 100%;
   overflow-x: auto;
   overflow-y: visible;
   column-gap: 2rem;
+
+  @media (max-width: 600px) {
+    justify-content: normal;
+  }
 `;
 
 export default function Slider({ title, extraItem, items, height }) {

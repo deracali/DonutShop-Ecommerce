@@ -27,6 +27,10 @@ const MostSaleItemEl = styled.span`
   @media (max-width: 722px) {
     min-width: 40vw;
   }
+
+  @media (max-width: 400px) {
+    min-width: 50vw;
+  }
 `;
 
 const Title = styled.span`
