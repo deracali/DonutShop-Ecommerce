@@ -11,7 +11,7 @@ const MostSaleItemEl = styled.span`
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  min-width: 40vw;
+  min-width: 0vw;
   width: 40vw;
   align-items: center;
   background-color: ${Colors.Gray};
@@ -22,6 +22,10 @@ const MostSaleItemEl = styled.span`
   > img {
     width: 75%;
     filter: drop-shadow(0px 11px 0.5px #21212115);
+  }
+
+  @media (max-width: 722px) {
+    min-width: 40vw;
   }
 `;
 

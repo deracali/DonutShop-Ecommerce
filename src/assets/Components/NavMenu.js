@@ -4,6 +4,7 @@ import { VscBell } from "react-icons/vsc";
 import { BiUser } from "react-icons/bi";
 import { useState } from "react";
 import Colors from "../Colors";
+import { useNavigate } from "react-router-dom";
 
 const NavMenuEl = styled.nav`
   min-height: 10vh;
@@ -49,6 +50,7 @@ const Link = styled.a`
 
 export default function NavMenu() {
   const [Current, SetCurrent] = useState("home");
+  const nav = useNavigate();
   return (
     <NavMenuEl>
       <Link
@@ -79,6 +81,7 @@ export default function NavMenu() {
         active={Current === "profile"}
         onClick={() => {
           if (Current !== "profile") SetCurrent("profile");
+          nav("/cart");
         }}
       >
         <BiUser />
